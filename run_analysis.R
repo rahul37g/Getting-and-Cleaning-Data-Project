@@ -1,18 +1,16 @@
 # Unzip dataSet to /data directory
-unzip(zipfile="./data/Dataset.zip",exdir="./data")
-
-unzip(zipfile="./midtermdata/Dataset.zip",exdir="./midtermdata")
+unzip(zipfile="getdata_projectfiles_UCI HAR Dataset.zip")
 
 # lets check the zip file and the new folder that has been unzipped
 list.files()
 
 #define the path where the new folder has been unziped
 pathdata = file.path("./UCI HAR Dataset")
+
 #create a file which has the 28 file names
 files = list.files(pathdata, recursive=TRUE)
 #show the files
 files
-## *************************************************************************##
 
 ### 1. Output Steps - Here we begin how to create the data set of training and test
 #Reading training tables - xtrain / ytrain, subject train
